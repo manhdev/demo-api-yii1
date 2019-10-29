@@ -1,6 +1,6 @@
 # demo-api-yii1
 API Using Yii1
-1. Step 1: Client Call API:
+1.Step 1: Client Call API:
 
         $url = 'http://abcxyz.host/index.php/site/getListPerson'; // Url API
         
@@ -22,7 +22,7 @@ API Using Yii1
         
         curl_close($curl); // close service
     
-2. Step 2:  Server received request and return data  
+2.Step 2:  Server received request and return data  
 
         $method = $_SERVER['REQUEST_METHOD']; // get request method of client submit 
         
@@ -120,3 +120,11 @@ API Using Yii1
         }
         
         echo json_encode($data); // return data for client 
+        
+  3.Function getListPerson for Server API 
+  
+        $model = new User();
+
+        $list_person = User::model()->findAll();
+
+        return $list_person;
