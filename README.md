@@ -24,7 +24,7 @@ API Using Yii1
         
         curl_close($curl); // close service
     
-2.Step 2:  Server received request and return data  
+2.Step 2:  Server received request and return data . create function action getListPerson
 
         $method = $_SERVER['REQUEST_METHOD']; // get request method of client submit 
         
