@@ -1,5 +1,7 @@
 # demo-api-yii1
+
 API Using Yii1
+
 1.Step 1: Client Call API:
 
         $url = 'http://abcxyz.host/index.php/site/getListPerson'; // Url API
